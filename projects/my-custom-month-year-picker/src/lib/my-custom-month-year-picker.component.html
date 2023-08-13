@@ -1,0 +1,53 @@
+<div class="month-picker" appOutsideClick [triggered]="isOpen" (outsideClick)="onOutsideClick($event)">
+    <div class="input-group">
+        <input [attr.role]="ariaRole" [attr.aria-label]="ariaLabel" [id]="id" (keyup)="onOutsideClick(false)"
+            [attr.readonly]="readonly ? readonly: null" class="form-control" [placeholder]="placeholder"
+            required="required ? required : null" [formControl]="control" ngbDatepicker>
+
+        <span *ngIf="!this.control.disabled" class="input-group-addon" (click)="toggle()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar"
+                viewBox="0 0 16 16">
+                <path
+                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+            </svg>
+        </span>
+
+    </div>
+    <div class="month-picker-container" *ngIf="isOpen">
+        <div class="month-content">
+            <div class="month-picker-header">
+                <div class="ngb-dp-arrow left">
+                    <button (click)="decrementYear()" aria-label="previousYear" title="Previous Year"
+                        class="btn btn-link ngb-dp-arrow-btn"><span class="ngb-dp-navigation-chevron"></span></button>
+                </div>
+                <span>
+                    <select [formControl]="yearDropDownFormControl" (change)="selectYear($event)"
+                        aria-label="Select year" title="Select year" class="form-select">
+                        <option *ngFor="let year of years" [value]="year">
+                            {{year}}
+                        </option>
+                    </select>
+                </span>
+                <div class="ngb-dp-arrow right">
+                    <button (click)="incrementYear()" aria-label="nextYear" title="Next Year"
+                        class="btn btn-link ngb-dp-arrow-btn"><span class="ngb-dp-navigation-chevron"></span></button>
+                </div>
+            </div>
+            <div class="month-picker-body">
+                <table class="month" aria-describedby="month">
+                    <tbody>
+                        <tr>
+                            <th scope="col" hidden></th>
+                        </tr>
+                        <tr *ngFor="let splittedMonths of months;">
+                            <td [style.color]="'black'" *ngFor="let month of splittedMonths;"
+                                (click)="selectMonth(month.value)">
+                                <span [ngClass]="isCurrentMonthActive(month.value)">{{ month.name }}</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

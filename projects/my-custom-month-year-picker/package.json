@@ -1,0 +1,16 @@
+{
+    "name": "my-custom-month-year-picker",
+    "version": "0.0.1",
+    "peerDependencies": {
+        "@angular/common": "^13.4.0",
+        "@angular/core": "^13.4.0",
+        "@angular/forms": "^13.4.0",
+        "@ng-bootstrap/ng-bootstrap": "^12.1.2",
+        "bootstrap": "^5.3.1",
+        "moment": "^2.29.4"
+    },
+    "dependencies": {
+        "tslib": "^2.3.0"
+    },
+    "sideEffects": false
+}

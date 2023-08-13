@@ -1,0 +1,173 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": "standard-with-typescript",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {},
+    "root": true,
+    "ignorePatterns": [
+        "**/node_modules/"
+    ],
+    "overrides": [
+        {
+            "files": [
+                "*.ts"
+            ],
+            "parserOptions": {
+                "project": [
+                    "tsconfig.json"
+                ],
+                "createDefaultProgram": true
+            },
+            "plugins": [
+                "eslint-plugin-import",
+                "rxjs-angular"
+            ],
+            "extends": [
+                "plugin:@angular-eslint/recommended",
+                // IMPORTANT: eslint:recommended must be included, before typescript-eslint/recommend. This disables some conflicting rules.
+                "eslint:recommended",
+                "plugin:@typescript-eslint/recommended",
+                "plugin:@angular-eslint/template/process-inline-templates",
+                "plugin:import/recommended",
+                "plugin:import/typescript"
+            ],
+            "rules": {
+                "@angular-eslint/component-class-suffix": [
+                    "error",
+                    {
+                        "suffixes": [
+                            "Page",
+                            "Component"
+                        ]
+                    }
+                ],
+                "@angular-eslint/component-selector": [
+                    "error",
+                    {
+                        "prefix": "app",
+                        "style": "kebab-case",
+                        "type": "element"
+                    }
+                ],
+                "@angular-eslint/directive-selector": [
+                    "error",
+                    {
+                        "prefix": "app",
+                        "style": "camelCase",
+                        "type": "attribute"
+                    }
+                ],
+                "no-console": [
+                    "error",
+                    {}
+                ],
+                "@typescript-eslint/no-unused-vars": [
+                    "error",
+                    {
+                        "vars": "all",
+                        "varsIgnorePattern": "^_",
+                        "args": "after-used",
+                        "argsIgnorePattern": "^_"
+                    }
+                ],
+                "max-len": [
+                    "error",
+                    {
+                        "code": 180
+                    }
+                ],
+                "@typescript-eslint/explicit-module-boundary-types": "off",
+                "import/first": "error",
+                "import/no-duplicates": "error",
+                "import/no-namespace": "error",
+                "import/extensions": "warn",
+                "import/order": [
+                    "warn",
+                    {
+                        "groups": [
+                            "builtin",
+                            "external",
+                            "internal",
+                            "parent",
+                            "sibling",
+                            "index",
+                            "object"
+                        ]
+                    }
+                ],
+                "import/newline-after-import": [
+                    "error",
+                    {
+                        "count": 1
+                    }
+                ],
+                "import/no-named-default": "error",
+                "import/no-default-export": "error",
+                "import/no-anonymous-default-export": "error",
+                "@typescript-eslint/naming-convention": [
+                    "error",
+                    {
+                        "selector": [
+                            "enumMember"
+                        ],
+                        "format": [
+                            "PascalCase"
+                        ],
+                        "modifiers": [
+                            "requiresQuotes"
+                        ]
+                    }
+                ],
+                "@typescript-eslint/typedef": [
+                    "error",
+                    {
+                        "arrayDestructuring": true,
+                        "arrowCallSignature": true,
+                        "arrowParameter": true,
+                        "callSignature": true,
+                        "memberVariableDeclaration": true,
+                        "parameter": true,
+                        "propertyDeclaration": true,
+                        "objectDestructuring": true,
+                        "variableDeclaration": true,
+                        "variableDeclarationIgnoreFunction": true
+                    }
+                ],
+                "@typescript-eslint/no-inferrable-types": 0,
+                "space-before-function-paren": "off",
+                "no-restricted-imports": [
+                    "error",
+                    {
+                        "patterns": [
+                            "src/app/**"
+                        ]
+                    }
+                ]
+            },
+            "settings": {
+                "import/resolver": {
+                    "node": {
+                        "paths": [
+                            "."
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "files": [
+                "*.html"
+            ],
+            "extends": [
+                "plugin:@angular-eslint/template/recommended"
+            ],
+            "rules": {}
+        }
+    ]
+}

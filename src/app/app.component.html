@@ -1,0 +1,23 @@
+<div
+    class="d-flex aligns-items-center justify-content-center card text-center w-25 position-absolute top-50 start-50 translate-middle">
+    <div class="card-header">
+        <h5 class="card-title">Demo of custom month year picker for angular</h5>
+    </div>
+    <div class="card-body">
+        <form [formGroup]="form">
+            <div class="form-group">
+                <my-custom-month-year-picker [id]="'monthYear'" [placeholder]="'mm.yy'" [ariaLabel]="'monthYearLabel'"
+                    [startYear]="1990" [endYear]="2025" [ariaRole]="'monthYearRole'" [readonly]="false"
+                    [showPicker]="false" [formControlName]="'date'" [required]="true">
+                </my-custom-month-year-picker>
+                <div class="invalid-feedback"
+                    *ngIf="form.get('date')?.errors?.['required'] && form.get('date')?.touched">
+                    Date Is Required!.
+                </div>
+            </div>
+            <div class="mt-5">
+                Result: {{form.controls['date'].value}}
+            </div>
+        </form>
+    </div>
+</div>

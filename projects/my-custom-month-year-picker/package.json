@@ -1,6 +1,13 @@
 {
-    "name": "my-custom-month-year-picker",
-    "version": "0.0.1",
+    "name": "@n2k02/my-custom-month-year-picker",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/N2K02/custom-month-year-picker.git"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
+    },
+    "version": "1.0.0",
     "peerDependencies": {
         "@angular/common": "^13.4.0",
         "@angular/core": "^13.4.0",

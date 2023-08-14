@@ -42,3 +42,4 @@ testem.log
 Thumbs.db
 projects/my-custom-month-year-picker/node_modules/
 .vscode/
+projects/my-custom-month-year-picker/.npmrc

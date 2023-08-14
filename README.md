@@ -1,12 +1,8 @@
 # Introduction
 
-An angular application to us the custom picker for month and year
+An angular application to use the custom picker for month and year
 
 ## Demo
-
-Visit '/' to view a simple example with quick start instructions.
-
-## Quick start
 
 `@my-custom-month-year-picker` Demo:
 
@@ -14,7 +10,7 @@ Visit '/' to view a simple example with quick start instructions.
 
 ## Design Considerations
 
-The primary application of this module is to view the custom month year picker and able to select any month available. There was no simple month year picker provided by ng-bootstrap which suited the specific usage i need for a project. So i created 1 in spare time.
+The primary application of this module is to view a custom month year picker and able to select any month with a year. There was no simple month year picker provided by ng-bootstrap which suited the specific usage i need for a project hence created a simple one.
 
 ## Developing
 

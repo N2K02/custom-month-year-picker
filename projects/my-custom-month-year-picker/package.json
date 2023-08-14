@@ -2,7 +2,7 @@
     "name": "@n2k02/my-custom-month-year-picker",
     "repository": {
         "type": "git",
-        "url": "git://github.com/N2K02/custom-month-year-picker.git"
+        "url": "https://github.com/N2K02/custom-month-year-picker.git"
     },
     "publishConfig": {
         "registry": "https://npm.pkg.github.com"

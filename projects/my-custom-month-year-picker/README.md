@@ -8,10 +8,10 @@ Visit '/' to view a simple example with quick start instructions.
 
 ## Quick start
 
-`@my-custom-month-year-picker` is shipped via [npm](https://www.npmjs.com) //TODO. You can install the package using the following command for the latest supported version of Angular:
+`@my-custom-month-year-picker` is shipped via [npm](https://www.npmjs.com). You can install the package using the following command for the latest supported version of Angular:
 
 ```
-npm install --save @my-custome-month-year-picker
+npm install --save @my-custom-month-year-picker
 ```
 
 ## Design Considerations

@@ -8,10 +8,10 @@ Visit '/' to view a simple example with quick start instructions.
 
 ## Quick start
 
-`@my-custom-month-year-picker` is shipped via [npm](https://www.npmjs.com). You can install the package using the following command for the latest supported version of Angular:
+`@n2k02/my-custom-month-year-picker` is shipped via [npm](https://www.npmjs.com). You can install the package using the following command for the latest supported version of Angular:
 
 ```
-npm install --save @my-custom-month-year-picker
+npm install --save @n2k02/my-custom-month-year-picker
 ```
 
 ## Design Considerations
@@ -20,7 +20,7 @@ The primary application of this module is to provide a custom month year picker 
 
 ## Developing
 
-This project was developed using the NodeJS version 18 and the library for the custom picker is using angular 13. You may experience problems using older versions.
+This project was developed using Node.js 18 and Angular 16. You may experience problems using older versions.
 
 Once you have cloned the repository, install all packages using `npm`:
 

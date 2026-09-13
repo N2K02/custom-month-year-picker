@@ -4,7 +4,7 @@ An angular application to use the custom picker for month and year
 
 ## Demo
 
-`@my-custom-month-year-picker` Demo:
+`@n2k02/my-custom-month-year-picker` Demo:
 
 ![Alt text](image.png)
 

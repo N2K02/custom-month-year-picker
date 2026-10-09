@@ -14,7 +14,7 @@ The primary application of this module is to view a custom month year picker and
 
 ## Developing
 
-This project was developed using the NodeJS version 18 and angular 16. You may experience problems using older versions.
+This project was developed using the NodeJS version 18 and angular 17. You may experience problems using older versions.
 
 Once you have cloned the repository, install all packages using `npm`:
 

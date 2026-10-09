@@ -20,7 +20,7 @@ The primary application of this module is to provide a custom month year picker 
 
 ## Developing
 
-This project was developed using Node.js 18 and Angular 16. You may experience problems using older versions.
+This project was developed using Node.js 18 and Angular 17. You may experience problems using older versions.
 
 Once you have cloned the repository, install all packages using `npm`:
 
